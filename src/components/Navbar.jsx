@@ -4,9 +4,11 @@ import '../styles/Navbar.css';
 const Navbar = ({ isMenuOpen, toggleMenu }) => {
   return (
     <nav className="navbar-container">
-      <div className="logo">Your Ecommerce Site</div>
-      <div className="mobile-menu-icon" onClick={toggleMenu}>
-        {isMenuOpen ? 'X' : '☰'}
+      <div className="logo-container">
+        <div className="logo">Your Ecommerce Site</div>
+        <div className={`mobile-menu-icon ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+          {isMenuOpen ? 'X' : '☰'}
+        </div>
       </div>
       <ul className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
         <li><a href="#">Home</a></li>
