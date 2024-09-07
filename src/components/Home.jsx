@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import '../styles/Home.css';
 import Navbar from './Navbar';
+import WeightDistributionComponent  from './WeightDistributionComponent';
+
+
 
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,6 +20,9 @@ const Home = () => {
           <h1 className="animate__animated animate__fadeInDown animate__delay-1s">Discover the Best Products</h1>
           <p className="animate__animated animate__fadeInUp animate__delay-2s">Elevate your shopping experience with our curated selection.</p>
           <button className="animate__animated animate__bounceIn animate__delay-3s">Shop Now</button>
+        </div>
+        <div>
+          <WeightDistributionComponent/>
         </div>
         <div className="featured-products">
           <div className="product-card animate__animated animate__fadeInLeft animate__delay-1s">
